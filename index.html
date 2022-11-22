@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+    color: aqua;
+    text-align: center;
+    background-color: cadetblue;
+}
+pre{
+    color: darkmagenta;
+    font-size: 20px;
+}
+h3{
+    color: blue;
+    font-size: 25px;
+}
+</style>
+<body>
+    <h1>JS - HANDSON-3</h1><hr>
+    <h3>1-Find the number of digits</h3>
+<pre>
+    const Find_Digits = (N) => 
+{
+  
+  var sum=0;
+while(N>=1){
+  N=N/10;
+  sum++;
+  }
+  return sum;
+};
+
+</pre>
+<h3>2-Find the Fives.</h3>
+<pre>
+    const Find_Five = (N) => 
+{
+	 let a=0;
+  while(N>0){
+  let x=N%10;
+  N=parseInt(N/10);
+  if(x===5){
+   a=a+1;
+  }
+  }
+  return a; 
+};
+</pre>
+<h3>3-Find Sum</h3>
+<pre>
+    const findSum = (n) => {
+        let a=0;
+       for(let i=0; i<=n; i++ ){
+       if(i%2===0){
+        a=a+i;
+       }
+       }
+     return a;  
+     };
+</pre>
+<h3>4-Find the sum of the digits of a given number.</h3>
+<pre>
+    const Number_Sum = (N) => 
+{
+	let b=0;
+  while(N>=1){
+  let a=N%10;
+   b=a+b;
+  N=parseInt(N/10);
+  }
+  return b;
+};
+</pre>
+<h3>5-Print the Odds</h3>
+<pre>
+    const Print_Odd = (N) => 
+{
+	 for( let i=2 ; i<=N ; i++){
+  if(i===2){
+  console.log(i);
+  }
+  else{
+  if(i%2===1){
+  console.log(i);
+  }
+  }
+  }
+};
+</pre>
+<h3>6-Print the Pattern.</h3>
+<pre>
+    const Print_pattern = (N) => 
+
+{ 
+  for( let i=1; i<=N; i++){
+  let a="";
+  for( let b=1; b<=i; b++){
+  a=a+"*";
+  }
+  console.log(a);
+  }
+};
+</pre>
+<h3>7-Check whether a Number is a prime or not</h3>
+<pre>
+    const Prime_Check = (N) => 
+{
+if(N===1){
+ return "NO"
+}
+  else{
+  for(let i=2; i < N ; i++){
+  if( N%i === 0){
+  return "NO";
+  }
+ }
+  return "YES";
+   }	 
+	
+};
+
+</pre>
+<h3>8-Print Numbers</h3>
+<pre>
+    const printNumbers = (n) => {
+        for(let i = 1 ; i <= n ; i++){
+       console.log(i)}
+};
+</pre>
+<h3>9-Print the Table</h3>
+<pre>
+    const Print_Table = (N) => 
+{
+ for(let i = 1 ; i <= 10 ; i++){
+   console.log(`${N} * ${i} = ${N*i}`)
+ }
+};
+</pre>
+
+
+</body>
+</html>
